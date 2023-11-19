@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="ValasztekRBG">
     </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Video J&#xe1;t&#xe9;k Shop"/>
     <Property name="type" type="java.awt.Window$Type" editor="org.netbeans.modules.form.editors.EnumEditor">
       <Value id="UTILITY"/>
     </Property>
@@ -25,7 +26,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-38,0,0,2,-98"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-38,0,0,2,-80"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -42,7 +43,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="6" y="41" width="-1" height="-1"/>
+          <AbsoluteConstraints x="6" y="41" width="310" height="-1"/>
         </Constraint>
       </Constraints>
 
@@ -51,29 +52,20 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="Jatek4RBnt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Jatek4RendelCb" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="Jatek3RBnt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Jatek3RendelCb" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="Jatek2RBnt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="Jatek2RendelCb" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="Jatek1RBnt" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                          <Component id="Jatek1RendelCb" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="Jatek4RBnt" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek3RBnt" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek2RBnt" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek1RBnt" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="96" max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="Jatek4RendelCb" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek3RendelCb" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek1RendelCb" min="-2" max="-2" attributes="0"/>
+                      <Component id="Jatek2RendelCb" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -83,14 +75,15 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="Jatek1RBnt" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="Jatek1RendelCb" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="Jatek1RBnt" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="Jatek2RBnt" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="Jatek2RendelCb" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="Jatek1RendelCb" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="Jatek2RendelCb" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -110,42 +103,67 @@
       <SubComponents>
         <Component class="javax.swing.JRadioButton" name="Jatek1RBnt">
           <Properties>
-            <Property name="text" type="java.lang.String" value="j&#xe1;t&#xe9;k1"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="ValasztekRBG"/>
+            </Property>
+            <Property name="selected" type="boolean" value="true"/>
+            <Property name="text" type="java.lang.String" value="Baldur&apos;s Gate III"/>
           </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Jatek1RBntItemStateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="Jatek2RBnt">
           <Properties>
-            <Property name="text" type="java.lang.String" value="j&#xe1;t&#xe9;k2"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="ValasztekRBG"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Monster Hunter Rise"/>
           </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Jatek2RBntItemStateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="Jatek3RBnt">
           <Properties>
-            <Property name="text" type="java.lang.String" value="j&#xe1;t&#xe9;k3"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="ValasztekRBG"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Halo Infinite"/>
           </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Jatek3RBntItemStateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="Jatek4RBnt">
           <Properties>
-            <Property name="text" type="java.lang.String" value="j&#xe1;t&#xe9;k4"/>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="ValasztekRBG"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Warhammer III"/>
           </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Jatek4RBntItemStateChanged"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="Jatek1RendelCb">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox1"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="Jatek2RendelCb">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox2"/>
+            <Property name="text" type="java.lang.String" value="Megrendel&#xe9;s"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="Jatek3RendelCb">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox3"/>
+            <Property name="text" type="java.lang.String" value="Megrendel&#xe9;s"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JCheckBox" name="Jatek4RendelCb">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jCheckBox4"/>
+            <Property name="text" type="java.lang.String" value="Megrendel&#xe9;s"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="Jatek2RendelCb">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Megrendel&#xe9;s"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -153,7 +171,7 @@
     <Component class="javax.swing.JButton" name="RendelesBnt">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="66" type="rgb"/>
+          <Color blue="ff" green="99" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Rendel&#xe9;s"/>
       </Properties>
@@ -166,55 +184,16 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Container class="javax.swing.JPanel" name="informaciokJP">
-      <Properties>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="inform&#xe1;ci&#xf3;k"/>
-          </Border>
-        </Property>
-      </Properties>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="392" y="248" width="-1" height="-1"/>
-        </Constraint>
-      </Constraints>
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                  <Component id="jatekLeirLbl" min="-2" pref="76" max="-2" attributes="0"/>
-                  <EmptySpace pref="101" max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jatekLeirLbl" min="-2" pref="46" max="-2" attributes="0"/>
-                  <EmptySpace pref="15" max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-      <SubComponents>
-        <Component class="javax.swing.JLabel" name="jatekLeirLbl">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="j&#xe1;t&#xe9;k le&#xed;r&#xe1;s"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Component class="javax.swing.JButton" name="MegseBtn">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="0" green="0" red="ff" type="rgb"/>
+          <Color blue="66" green="0" red="cc" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="M&#xe9;gse"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MegseBtnActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="370" y="390" width="295" height="60"/>
@@ -231,7 +210,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="392" y="41" width="-1" height="-1"/>
+          <AbsoluteConstraints x="369" y="30" width="300" height="200"/>
         </Constraint>
       </Constraints>
 
@@ -239,26 +218,28 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="94" max="32767" attributes="0"/>
-                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
+                  <Component id="jatekKepLbl" min="-2" pref="263" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="103" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Component id="jatekKepLbl" min="-2" pref="174" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="jatekKepLbl">
           <Properties>
-            <Property name="text" type="java.lang.String" value="J&#xe1;t&#xe9;kokkepek"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/kepek/game1.png"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
@@ -351,6 +332,40 @@
         </Component>
       </SubComponents>
     </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="370" y="270" width="300" height="110"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jatekLeirTxtA">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Massive RPG&#xa;K&#xf6;rre osztot strat&#xe9;giai j&#xe1;t&#xe9;k.&#xa;Ahol te &#xed;rhatod a saj&#xe1;t t&#xf6;rt&#xe9;neted,&#xa;&#xe9;s mindennek van k&#xf6;vetkezm&#xe9;nye!"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="InformacioLbl">
+      <Properties>
+        <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="jatekLeirTxtA"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="inform&#xe1;ciok"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="460" y="250" width="70" height="20"/>
+        </Constraint>
+      </Constraints>
+    </Component>
     <Component class="javax.swing.JLabel" name="BGImg_Lbl">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -359,7 +374,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="0" width="670" height="470"/>
+          <AbsoluteConstraints x="0" y="0" width="690" height="470"/>
         </Constraint>
       </Constraints>
     </Component>
