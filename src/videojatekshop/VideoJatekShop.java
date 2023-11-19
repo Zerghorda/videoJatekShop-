@@ -52,8 +52,8 @@ public class VideoJatekShop extends javax.swing.JFrame {
         BGImg_Lbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setResizable(false);
         setType(java.awt.Window.Type.UTILITY);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         valasztekJp.setBorder(javax.swing.BorderFactory.createTitledBorder("választékok"));
 
@@ -121,6 +121,8 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        getContentPane().add(valasztekJp, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 41, -1, -1));
+
         RendelesBnt.setBackground(new java.awt.Color(102, 255, 255));
         RendelesBnt.setText("Rendelés");
         RendelesBnt.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +130,7 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 RendelesBntActionPerformed(evt);
             }
         });
+        getContentPane().add(RendelesBnt, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 289, 60));
 
         informaciokJP.setBorder(javax.swing.BorderFactory.createTitledBorder("információk"));
 
@@ -140,7 +143,7 @@ public class VideoJatekShop extends javax.swing.JFrame {
             .addGroup(informaciokJPLayout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addComponent(jatekLeirLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         informaciokJPLayout.setVerticalGroup(
             informaciokJPLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,8 +153,11 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
+        getContentPane().add(informaciokJP, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 248, -1, -1));
+
         MegseBtn.setBackground(new java.awt.Color(255, 0, 0));
         MegseBtn.setText("Mégse");
+        getContentPane().add(MegseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 390, 295, 60));
 
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -171,8 +177,10 @@ public class VideoJatekShop extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(64, 64, 64)
                 .addComponent(jLabel6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 41, -1, -1));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Kiszálitási adatok"));
 
@@ -201,7 +209,7 @@ public class VideoJatekShop extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(kiszalitTxtF, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
                             .addComponent(rendelotxtF))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -221,52 +229,10 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
-        BGImg_Lbl.setText("BG");
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 196, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BGImg_Lbl)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(valasztekJp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(57, 57, 57)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(informaciokJP, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(RendelesBnt, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addComponent(MegseBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(BGImg_Lbl)
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18)
-                        .addComponent(informaciokJP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(valasztekJp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(MegseBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                    .addComponent(RendelesBnt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
+        BGImg_Lbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kepek/BG.PNG"))); // NOI18N
+        getContentPane().add(BGImg_Lbl, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 470));
 
         pack();
         setLocationRelativeTo(null);
