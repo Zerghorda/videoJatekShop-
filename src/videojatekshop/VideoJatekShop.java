@@ -28,14 +28,14 @@ public class VideoJatekShop extends javax.swing.JFrame {
 
         ValasztekRBG = new javax.swing.ButtonGroup();
         valasztekJp = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
-        jCheckBox3 = new javax.swing.JCheckBox();
-        jCheckBox4 = new javax.swing.JCheckBox();
+        Jatek1RBnt = new javax.swing.JRadioButton();
+        Jatek2RBnt = new javax.swing.JRadioButton();
+        Jatek3RBnt = new javax.swing.JRadioButton();
+        Jatek4RBnt = new javax.swing.JRadioButton();
+        Jatek1RendelCb = new javax.swing.JCheckBox();
+        Jatek2RendelCb = new javax.swing.JCheckBox();
+        Jatek3RendelCb = new javax.swing.JCheckBox();
+        Jatek4RendelCb = new javax.swing.JCheckBox();
         RendelesBnt = new javax.swing.JButton();
         informaciokJP = new javax.swing.JPanel();
         jatekLeirLbl = new javax.swing.JLabel();
@@ -57,21 +57,21 @@ public class VideoJatekShop extends javax.swing.JFrame {
 
         valasztekJp.setBorder(javax.swing.BorderFactory.createTitledBorder("választékok"));
 
-        jRadioButton1.setText("játék1");
+        Jatek1RBnt.setText("játék1");
 
-        jRadioButton2.setText("játék2");
+        Jatek2RBnt.setText("játék2");
 
-        jRadioButton3.setText("játék3");
+        Jatek3RBnt.setText("játék3");
 
-        jRadioButton4.setText("játék4");
+        Jatek4RBnt.setText("játék4");
 
-        jCheckBox1.setText("jCheckBox1");
+        Jatek1RendelCb.setText("jCheckBox1");
 
-        jCheckBox2.setText("jCheckBox2");
+        Jatek2RendelCb.setText("jCheckBox2");
 
-        jCheckBox3.setText("jCheckBox3");
+        Jatek3RendelCb.setText("jCheckBox3");
 
-        jCheckBox4.setText("jCheckBox4");
+        Jatek4RendelCb.setText("jCheckBox4");
 
         javax.swing.GroupLayout valasztekJpLayout = new javax.swing.GroupLayout(valasztekJp);
         valasztekJp.setLayout(valasztekJpLayout);
@@ -81,21 +81,21 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(valasztekJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(valasztekJpLayout.createSequentialGroup()
-                        .addComponent(jRadioButton4)
+                        .addComponent(Jatek4RBnt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jCheckBox4))
+                        .addComponent(Jatek4RendelCb))
                     .addGroup(valasztekJpLayout.createSequentialGroup()
-                        .addComponent(jRadioButton3)
+                        .addComponent(Jatek3RBnt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jCheckBox3))
+                        .addComponent(Jatek3RendelCb))
                     .addGroup(valasztekJpLayout.createSequentialGroup()
-                        .addComponent(jRadioButton2)
+                        .addComponent(Jatek2RBnt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jCheckBox2))
+                        .addComponent(Jatek2RendelCb))
                     .addGroup(valasztekJpLayout.createSequentialGroup()
-                        .addComponent(jRadioButton1)
+                        .addComponent(Jatek1RBnt)
                         .addGap(49, 49, 49)
-                        .addComponent(jCheckBox1)))
+                        .addComponent(Jatek1RendelCb)))
                 .addContainerGap(96, Short.MAX_VALUE))
         );
         valasztekJpLayout.setVerticalGroup(
@@ -105,19 +105,19 @@ public class VideoJatekShop extends javax.swing.JFrame {
                 .addGroup(valasztekJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, valasztekJpLayout.createSequentialGroup()
                         .addGroup(valasztekJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jCheckBox1))
+                            .addComponent(Jatek1RBnt)
+                            .addComponent(Jatek1RendelCb))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jRadioButton2))
-                    .addComponent(jCheckBox2, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addComponent(Jatek2RBnt))
+                    .addComponent(Jatek2RendelCb, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(valasztekJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jCheckBox3))
+                    .addComponent(Jatek3RBnt)
+                    .addComponent(Jatek3RendelCb))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(valasztekJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton4)
-                    .addComponent(jCheckBox4))
+                    .addComponent(Jatek4RBnt)
+                    .addComponent(Jatek4RendelCb))
                 .addContainerGap())
         );
 
@@ -279,21 +279,21 @@ public class VideoJatekShop extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel BGImg_Lbl;
+    private javax.swing.JRadioButton Jatek1RBnt;
+    private javax.swing.JCheckBox Jatek1RendelCb;
+    private javax.swing.JRadioButton Jatek2RBnt;
+    private javax.swing.JCheckBox Jatek2RendelCb;
+    private javax.swing.JRadioButton Jatek3RBnt;
+    private javax.swing.JCheckBox Jatek3RendelCb;
+    private javax.swing.JRadioButton Jatek4RBnt;
+    private javax.swing.JCheckBox Jatek4RendelCb;
     private javax.swing.JButton MegseBtn;
     private javax.swing.JButton RendelesBnt;
     private javax.swing.ButtonGroup ValasztekRBG;
     private javax.swing.JPanel informaciokJP;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JLabel jatekLeirLbl;
     private javax.swing.JLabel kiszalitLbl;
     private javax.swing.JTextField kiszalitTxtF;
