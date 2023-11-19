@@ -4,7 +4,13 @@
  */
 package videojatekshop;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -257,33 +263,54 @@ public class VideoJatekShop extends javax.swing.JFrame {
 
 
     private void RendelesBntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RendelesBntActionPerformed
-
-
+        boolean NincsNev = rendelotxtF.getText().equals("");
+        boolean NincsTszam = telefonSzTxtF.getText().equals("");
+        boolean NincsCim = kiszalitTxtF.getText().equals("");
+        int ikon = 0;
+        String uzenet = "";
+        String cim = "";
+        if (!NincsNev & !NincsTszam & !NincsCim) {
+            informaciok();
+        } else if (NincsNev) {
+            ikon = JOptionPane.WARNING_MESSAGE;
+            uzenet = "Nincs név megadva!";
+            cim = "Nincs Név!";
+        } else if (NincsTszam) {
+            ikon = JOptionPane.WARNING_MESSAGE;
+            uzenet = "Nincs Telefon szám megadva!";
+            cim = "Nincs telefon szám!";
+        } else if (NincsCim) {
+            ikon = JOptionPane.WARNING_MESSAGE;
+            uzenet = "Nincs cím megadva!";
+            cim = "Nincs cím!";
+        }
+        JOptionPane.showMessageDialog(null, uzenet, cim, ikon);
     }//GEN-LAST:event_RendelesBntActionPerformed
 
-    private void MegseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MegseBtnActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_MegseBtnActionPerformed
-
     private void Jatek1RBntItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Jatek1RBntItemStateChanged
-        
+//        kepcsere("kepek/game1.png")
         jatekLeirTxtA.setText("Massive RPG \n Körre osztot stratégiai játék.\nAhol te írhatod a saját történeted,\nés mindennek van következménye!");
     }//GEN-LAST:event_Jatek1RBntItemStateChanged
 
     private void Jatek2RBntItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Jatek2RBntItemStateChanged
-       
+//        kepcsere("kepek/game2.png")
         jatekLeirTxtA.setText("Kreálj egy karaktert és vadász különféle \nNagy bestiákat és szerez belőlük nyers anyagot,\n hogy nagyobb zsákmányra vadász.");
     }//GEN-LAST:event_Jatek2RBntItemStateChanged
 
     private void Jatek3RBntItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Jatek3RBntItemStateChanged
-        jatekKepLbl.setIcon(game3.png);
+//        kepcsere("kepek/game3.png");
         jatekLeirTxtA.setText("Fps,Open world játék \nJátsz egyjátékosba vagy coop-ba \n,harcolj az idegenek ellen \nés mentsd  meg a univerzumot.");
     }//GEN-LAST:event_Jatek3RBntItemStateChanged
 
     private void Jatek4RBntItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Jatek4RBntItemStateChanged
-       
+//        kepcsere("kepek/game4.png");
         jatekLeirTxtA.setText("Turn based és Real time Stratégiai játék,\nVálasz egy fájt a nagy vátozaték közül és \ngyözdle az ellenfeleidet,\n akár foglald el az egész világot!");
     }//GEN-LAST:event_Jatek4RBntItemStateChanged
+
+    private void MegseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MegseBtnActionPerformed
+        JOptionPane.showMessageDialog(null, "Visszlát!");
+        System.exit(0);
+    }//GEN-LAST:event_MegseBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -348,4 +375,52 @@ public class VideoJatekShop extends javax.swing.JFrame {
     private javax.swing.JPanel valasztekJp;
     // End of variables declaration//GEN-END:variables
 
+    private int informaciok() {
+        String Cim = "Rendelés";
+        String RendInf = "Meg Rendelt Játék(ok) : ";
+        String nev = rendeloLbl.getText();
+        String telefon = telefonSzLbl.getText();
+        String cim = kiszalitLbl.getText();
+        String rendelt = rendeltek();
+        int osszeg = szamolas();
+        String format = String.format("%s\nRendelő neve: %s\nKiszálítási cím: %s\nMegrendelő Telefon száma: %s\nRendelt játék(ok): %s\nVégosszeg: %d", RendInf, nev, cim, telefon, rendelt, osszeg);
+        int valasz = JOptionPane.showConfirmDialog(rootPane, format, Cim, JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        if (valasz == JOptionPane.YES_OPTION) {
+            JOptionPane.showMessageDialog(null, "Köszönjük,hogy nálunk rendelt!");
+            System.exit(0);
+        }
+        if (valasz == JOptionPane.NO_OPTION) {
+            System.exit(0);
+        }
+        return valasz;
+    }
+
+//    private void kepcsere(String kep) throws IOException {
+//        File kellKep = new File(kep);
+//    }
+    private String rendeltek() {
+        Boolean[] rendeltek = {Jatek1RendelCb.isSelected(), Jatek2RendelCb.isSelected(), Jatek3RendelCb.isSelected(), Jatek4RendelCb.isSelected()};
+        String[] JatekokNeve = {Jatek1RBnt.getText(), Jatek2RBnt.getText(), Jatek3RBnt.getText(), Jatek4RBnt.getText()};
+        String txt = "\n";
+        for (int i = 0; i < rendeltek.length; i++) {
+            if (rendeltek[i]) {
+                txt += "-" + JatekokNeve[i] + "\n";
+            }
+        }
+        return txt;
+
+    }
+
+    private int szamolas() {
+        Boolean[] rendeltek = {Jatek1RendelCb.isSelected(), Jatek2RendelCb.isSelected(), Jatek3RendelCb.isSelected(), Jatek4RendelCb.isSelected()};
+        int[] JatekAr = {22700, 11400, 26500, 22700};
+        int osszeg = 0;
+        for (int i = 0; i < rendeltek.length; i++) {
+            if (rendeltek[i]) {
+                osszeg += JatekAr[i];
+            }
+        }
+        return osszeg;
+    }
 }
